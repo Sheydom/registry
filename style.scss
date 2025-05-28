@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(/pngtree-complex-computer-network-on-black-background-with-a-colorful.jpg);
+  background-size: cover;
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+    h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+  }
+  h1,
+  p,
+  legend,
+  label {
+    color: white;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  backdrop-filter: blur(15px);
+  background-color: rgba(137, 27, 27, 0.2);
+  width: 100%;
+  max-width: 50%;
+  // min-width: 30%;
+  // height: 100%;
+  // max-height: 75%;
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 1rem;
+  img {
+    display: flex;
+    margin-left: auto;
+    border-radius: 30px;
+    max-width: 130px;
+    max-height: 60px;
+  }
+  fieldset {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    // height: 50%; // for testing purposes
+    border-radius: 10px;
+    legend {
+      display: flex;
+      font-weight: 600;
+      font-size: 2rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    hr {
+      margin: 5px 0px;
+    }
+  }
+
+  input,
+  select {
+    width: 100%;
+    display: flex;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #c3dbdca3;
+    color: black;
+    border: 2px solid white;
+    // outline: none;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  input::placeholder {
+    color: black;
+    font-weight: 600;
+  }
+  div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__termsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    input {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
+  }
+  // input:not(:hover, :active) {
+  //   opacity: 0.5;
+  // }
+  &__submitButton {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    font-size: 1.5rem;
+    border-radius: 15px;
+  }
+  &__clearButton {
+    background-color: coral;
+    color: white;
+    padding: 10px;
+    font-size: 1.5rem;
+    border-radius: 15px;
+  }
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus,
+  input[type="number"]:focus,
+  input[type="tel"]:focus,
+  input[type="date"]:focus,
+  select:focus {
+    border-color: #00ffff; // Change to your preferred color
+    outline: none; // Optional: removes default outline
+    box-shadow: 0 0 5px #00ffff;
+  }
+}
+input[type="radio"] {
+  transform: scale(1.5);
+}
+input[type="radio"]:focus {
+  outline: none;
+}
+footer {
+  color: white;
+  margin-top: 10px;
+}

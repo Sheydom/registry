@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="vieport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Dominic K">
+  <meta name="description" content="Registration Form">
+  <link rel="stylesheet" href="style.css">
+  <title>Registration Form</title>
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="header__h1">Registration Form</h1>
+    <p>
+      Please complete the following form to register for an account in
+      4Phones.
+    </p>
+  </header>
+  <form action="post" class="form">
+    <img src="/Picture2.png" alt="companyLogo" class="header__logo">
+    <fieldset class="form__fieldset" id="loginDetails">
+      <legend>Login Details</legend>
+      <label for="userName" class="form__userLabel">Username</label>
+      <input type="text" name="userName" placeholder="Name" class="form__userNameInput" required id="userName">
+      <label for="userEmail" class="form__userLabel">Email Address</label>
+      <input type="email" name="userEmail" placeholder="Email" class="form__userNameInput" required id="userEmail">
+      <!-- <div class="form__passwordContainer"> for having two inputs in a row-->
+      <label for="password">Password</label>
+      <input type="password" name="password" placeholder="***" class="form__userNameInput" required id="password">
+      <label for="confirmPassword">Confirm Password</label>
+      <input type="password" name="password" placeholder="***" class="form__userNameInput" required
+        id="confirmPassword">
+      <!-- </div> -->
+    </fieldset>
+    <fieldset class="form__fieldset" id="personalDetails">
+      <legend>Personal Details</legend>
+      <label for="firstName" class="form__userLabel">First Name</label>
+      <input type="text" name="firstName" placeholder="First Name" class="form__userNameInput" required id="firstName">
+      <label for="surName" class="form__userLabel">Surname</label>
+      <input type="text" name="surName" placeholder="Last Name" class="form__userNameInput" required id="surName">
+      <label for="phoneNumber" class="form__userLabel">Phone Number</label>
+      <input type="tel" name="phoneNumber" placeholder="+49 123 4567890" class="form__userNameInput" id="phoneNumber">
+      <label for="birth">Date of Birth</label>
+      <input type="date" name="birth" class="form__birthInput" id="birth">
+      <label for="genderMale">Gender</label>
+      <hr>
+      <div class="genderContainer">
+        <label for="genderMale" class="form__userGenderLabel">Male</label>
+        <input type="radio" name="gender" id="genderMale" required>
+        <label for="genderFemale" class="form__userGenderLabel">Female</label>
+        <input type="radio" name="gender" id="genderFemale" required>
+        <label for="genderUnspecified" class="form__userGenderLabel">Unspecified</label>
+        <input type="radio" name="gender" id="genderUnspecified" required>
+      </div>
+    </fieldset>
+    <fieldset class="form__fieldset" id="personalAddress">
+      <legend>Adress Details</legend>
+      <label for="state">State</label>
+      <select name="state" id="state" required>
+        <option value="">State</option>
+        <option value="act">ACT</option>
+        <option value="nsw">NSW</option>
+        <option value="nt">NT</option>
+        <option value="qld">QLD</option>
+        <option value="sa">SA</option>
+        <option value="tas">TAS</option>
+        <option value="vic">VIC</option>
+        <option value="wa">WA</option>
+      </select>
+      <label for="suburb">Suburb</label>
+      <input type="text" name="suburb" placeholder="Suburb" id="suburb">
+      <label for="postCode">Post Code</label>
+      <input type="text" name="postCode" placeholder="Post Code" id="postCode">
+      <label for="street">Address</label>
+      <input type="text" name="street" placeholder="street and house Number" id="street">
+    </fieldset>
+    <div class="form__termsContainer">
+      <input type="checkbox" name="terms" id="terms" required>
+      <label for="terms">Acceptance of Western Vocational Studies privacy policy</label>
+    </div>
+    <div class="form__button">
+      <button type="submit" class="form__submitButton">Register</button>
+      <button type="reset" class="form__clearButton">Clear</button>
+    </div>
+  </form>
+  <footer>
+    <p>©2025 4Phones</p>
+  </footer>
+</body>
+
+</html>
