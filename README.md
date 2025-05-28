@@ -1,1 +1,1 @@
-https://sheydom.github.io/registry.html/
+https://sheydom.github.io/registry
