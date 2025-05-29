@@ -128,7 +128,16 @@ body label {
   box-shadow: 0 0 5px #00ffff;
 }
 
+.genderContainer {
+  display: flex;
+
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
 input[type="radio"] {
+  width: auto;
+  display: inline-block;
   transform: scale(1.5);
 }
 
